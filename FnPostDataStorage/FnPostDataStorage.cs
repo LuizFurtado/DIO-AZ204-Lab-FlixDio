@@ -67,7 +67,7 @@ namespace FnPostDataStorage
                 _logger.LogError(ex, "Error uploading file to Azure Storage");
             }
 
-            return new OkObjectResult("Welcome to Azure Functions!");
+            return new BadRequestObjectResult("Error uploading file to Azure Storage");
         }
     }
 }
